@@ -1,0 +1,4 @@
+<h3>Lazy Load: News</h3>
+<ul *ngFor="let n of news$ | async" class="products-list__item">
+  <li><a href="news/{{n.id}}">{{n.title}}</a></li>
+</ul>
