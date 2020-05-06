@@ -6,6 +6,12 @@ exports.config = {
   projectName: "scully-example",
   outDir: "./dist/static",
   routes: {
+    '/blog/:slug': {
+      type: 'contentFolder',
+      slug: {
+        folder: "./blog"
+      }
+    },
     "/news/:id": {
       type: NewsPlugin,
       url: "http://my-json-server.typicode.com/yangjunhan/demo/news",
